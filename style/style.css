@@ -15,7 +15,7 @@ ul {
 
 /* Body */
 body {
-  background-color: rgba(45, 45, 53);
+  background-color: rgba(20, 19, 24);
 }
 /* Wrapper */
 
@@ -49,16 +49,26 @@ body {
 .chats {
   height: 70px;
   width: 70px;
-  background-color: white;
   margin-top: 10px;
   border-radius: 50px;
   object-fit: cover;
+  position: relative;
+}
+.selected::before {
+  content: "";
+  height: 50px;
+  width: 30px;
+  background-color: white;
+  border-radius: 10px;
+  position: absolute;
 }
 
 /* MAIN */
 Main {
   background-color: rgba(28, 29, 34);
   flex-grow: 1;
+  border-top-left-radius: 10px;
+  margin-top: 10px;
 }
 
 /* Footer */
