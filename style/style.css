@@ -29,7 +29,7 @@ body {
 .sidebar {
   gap: 4px;
   background-color: rgba(20, 19, 24);
-  width: 100px;
+  width: 110px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,8 +39,8 @@ body {
 /* Servers */
 
 .server {
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   margin-top: 10px;
   border-radius: 50px;
   object-fit: cover;
@@ -56,11 +56,31 @@ body {
 }
 .selected::before {
   content: "";
-  height: 50px;
+  height: 70px;
   width: 30px;
   background-color: white;
   border-radius: 10px;
   position: absolute;
+  bottom: 0%;
+  right: 120%;
+}
+
+.hide {
+  height: 70px;
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  right: 99%;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+  opacity: 0;
+}
+
+div.server.zooming:hover > div.hide {
+  opacity: 1;
+}
+div.server.zooming:hover > img {
+  transform: scale(1.2);
 }
 
 /* MAIN */
@@ -68,6 +88,7 @@ Main {
   background-color: rgba(28, 29, 34);
   flex-grow: 1;
   border-top-left-radius: 10px;
+  overflow: auto;
   margin-top: 10px;
 }
 
