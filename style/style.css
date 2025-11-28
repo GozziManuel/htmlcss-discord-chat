@@ -27,8 +27,32 @@ body {
 
 /* Sidebar */
 .sidebar {
+  gap: 4px;
   background-color: rgba(20, 19, 24);
   width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/* Servers */
+
+.server {
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+  border-radius: 50px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.chats {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 50px;
+  object-fit: cover;
 }
 
 /* MAIN */
