@@ -12,3 +12,35 @@ img {
 ul {
   list-style-type: none;
 }
+
+/* Body */
+body {
+  background-color: rgba(45, 45, 53);
+}
+/* Wrapper */
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: rgba(20, 19, 24);
+  width: 100px;
+}
+
+/* MAIN */
+Main {
+  background-color: rgba(28, 29, 34);
+  flex-grow: 1;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  background-color: rgba(45, 45, 53);
+  display: flex;
+  height: 80px;
+}
