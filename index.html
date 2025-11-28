@@ -13,6 +13,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css" />
 
+    <!-- Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <title>Document</title>
   </head>
 
@@ -45,9 +50,155 @@
         <div class="server zooming">
           <div class="hide"></div>
           <img src="./img/server_pokemon.png" alt="pokemon" />
+          <!-- Ho provato a fare le transition ma se provo a farle entrambe si rompe tutto  -->
         </div>
       </header>
-      <main></main>
+      <main>
+        <h1 class="mess">Messaggi</h1>
+        <section class="friendsection">
+          <div class="search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </div>
+          <div class="friendadd">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              class="bi bi-person-fill-add"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0m-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"
+              />
+              <path
+                d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"
+              />
+            </svg>
+            <p>Aggiungi amici</p>
+          </div>
+        </section>
+        <section class="friends">
+          <div class="card">
+            <div class="pfp">
+              <img src="./img/profile1.webp" alt="Giuseppe" />
+              <div class="status"></div>
+            </div>
+            <div class="nickname">
+              <h2>Giuseppe Rossi</h2>
+              <p>Ciao! tutto bene?</p>
+            </div>
+            <div class="time"><p>2min</p></div>
+          </div>
+
+          <div class="card">
+            <div class="pfp">
+              <img src="./img/profile2.webp" alt="Francesco" />
+              <div class="status"></div>
+            </div>
+            <div class="nickname">
+              <h2>Francesco Bianchi</h2>
+              <p>Tu: perfetto, grazie!</p>
+            </div>
+            <div class="time"><p>5min</p></div>
+          </div>
+
+          <div class="card">
+            <div class="pfp">
+              <img src="./img/profile12.webp" alt="Giulio" />
+              <div class="status"></div>
+           </div>
+            <div class="nickname">
+              <h2>Giulio Moretti</h2>
+              <p>Tu: ottimo lavoro!</p>
+            </div>
+            <div class="time"><p8>8min</p8></div>
+          </div>
+
+          <div class="card">
+             <div class="pfp">
+              <img src="./img/profile3.webp" alt="Lucia" />
+              <div class="status"></div>
+           </div>
+            <div class="nickname">
+              <h2>Lucia Ferrari</h2>
+              <p>grazie mille per tutto</p>
+            </div>
+            <div class="time"><p>12min</p></div>
+          </div>
+
+          <div class="card">
+           <div class="pfp">
+              <img src="./img/profile4.webp" alt="Stefano" />
+              <div class="status"></div>
+           </div>
+            <div class="nickname">
+              <h2>Stefano Romano</h2>
+              <p>Tu: ci sentiamo dopo</p>
+            </div>
+            <div class="time"><p>18min</p></div>
+          </div>
+
+          <div class="card">
+           <div class="pfp">
+              <img src="./img/profile5.webp" alt="Alessandra" />
+              <div class="status"></div>
+           </div>
+            <div class="nickname">
+              <h2>Alessandra Conti</h2>
+              <p>quando hai tempo chiamami</p>
+            </div>
+            <div class="time"><p>25min</p></div>
+          </div>
+
+          <div class="card">
+                <div class="pfp">
+              <img src="./img/profile6.webp" alt="Lucia" />
+              <div class="status"></div>
+           </div>
+            <div class="nickname">
+              <h2>Elena Martini</h2>
+              <p>Tu: hai visto il messaggio?</p>
+            </div>
+            <div class="time"><p>45min</p></div>
+          </div>
+
+          <div class="card">
+                <div class="pfp">
+              <img src="./img/profile7.webp" alt="Matteo" />
+              <div class="status"></div>
+           </div>
+            <div class="nickname">
+              <h2>Matteo Greco</h2>
+              <p>ho finito il progetto</p>
+            </div>
+            <div class="time"><p>12min</p></div>
+          </div>
+
+          <div class="card">
+                <div class="pfp">
+              <img src="./img/profile8.webp" alt="Marta" />
+              <div class="status"></div>
+           </div>
+            <div class="nickname">
+              <h2>Marta Cortina</h2>
+              <p>Tu: lato nostro non ci sono problemi</p>
+            </div>
+            <div class="time"><p>1h</p></div>
+          </div></div>  
+        </section>
+      </main>
     </div>
     <footer></footer>
   </body>
