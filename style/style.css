@@ -6,6 +6,8 @@
 
 img {
   display: block;
+  border-radius: 20px;
+  overflow: hidden;
   max-width: 100%;
 }
 
@@ -174,4 +176,23 @@ footer {
   background-color: rgba(45, 45, 53);
   display: flex;
   height: 80px;
+  padding: 10px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footericon {
+  flex: 1 1 0;
+  text-align: center;
+  color: white;
+}
+.yourpfp {
+  height: 60px;
+  flex: 1 1 0;
+  width: 35px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
 }
