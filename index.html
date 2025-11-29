@@ -14,9 +14,12 @@
     <link rel="stylesheet" href="./style/style.css" />
 
     <!-- Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Document</title>
   </head>
@@ -24,11 +27,12 @@
   <body>
     <div class="wrapper">
       <header class="sidebar">
+        <!-- SERVERS -->
         <div class="chats zooming selected">
           <img src="./img/logo.webp" alt="discord" />
         </div>
         <div class="server zooming toselect">
-          <img class="circleimg" src="./img/server arte.png" alt="arte" />
+          <img class="circleimg" src="./img/server_arte.png" alt="arte" />
         </div>
         <div class="server zooming toselect">
           <img class="circleimg" src="./img/server_boolean.png" alt="boolean" />
@@ -37,16 +41,25 @@
           <img class="circleimg" src="./img/server_italia.png" alt="Italia" />
         </div>
         <div class="server zooming toselect">
-          <img class="circleimg" src="./img/server_nintendo.png" alt="nintendo" />
+          <img
+            class="circleimg"
+            src="./img/server_nintendo.png"
+            alt="nintendo"
+          />
         </div>
         <div class="server zooming toselect">
-          <img class="circleimg" src="./img/server_javascript.png" alt="javascript" />
+          <img
+            class="circleimg"
+            src="./img/server_javascript.png"
+            alt="javascript"
+          />
         </div>
         <div class="server zooming toselect">
           <img class="circleimg" src="./img/server_pokemon.png" alt="pokemon" />
-          <!-- Ho provato a fare le transition ma se provo a farle entrambe si rompe tutto  -->
         </div>
       </header>
+
+      <!-- SEARCH BAR -->
       <main>
         <h1 class="mess">Messaggi</h1>
         <section class="friendsection">
@@ -64,6 +77,7 @@
               />
             </svg>
           </div>
+
           <div class="friendadd">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,13 +97,15 @@
             <p>Aggiungi amici</p>
           </div>
         </section>
+
+        <!-- FIRENDS -->
         <section class="friends">
           <!-- Giuseppe -->
           <div class="card">
             <div class="pfp">
               <img class="circleimg" src="./img/profile1.webp" alt="Giuseppe" />
               <div class="status">
-                <div class="offline "></div>
+                <div class="offline"></div>
               </div>
             </div>
             <div class="nickname">
@@ -98,10 +114,15 @@
             </div>
             <div class="time"><p>2min</p></div>
           </div>
+
           <!-- Francesco -->
           <div class="card">
             <div class="pfp">
-              <img  class="circleimg" src="./img/profile2.webp" alt="Francesco" />
+              <img
+                class="circleimg"
+                src="./img/profile2.webp"
+                alt="Francesco"
+              />
               <div class="status">
                 <div class="inactive"></div>
               </div>
@@ -112,6 +133,7 @@
             </div>
             <div class="time"><p>5min</p></div>
           </div>
+
           <!-- Giulio -->
           <div class="card">
             <div class="pfp">
@@ -119,113 +141,150 @@
               <div class="status">
                 <div class="inactive"></div>
               </div>
-           </div>
+            </div>
             <div class="nickname">
               <h2>Giulio Moretti</h2>
               <p>Tu: ottimo lavoro!</p>
             </div>
-            <div class="time"><p8>8min</p8></div>
+            <div class="time"><p>8min</p></div>
           </div>
+
           <!-- Lucia -->
           <div class="card">
-             <div class="pfp">
+            <div class="pfp">
               <img class="circleimg" src="./img/profile3.webp" alt="Lucia" />
               <div class="status">
                 <div class="online"></div>
               </div>
-           </div>
+            </div>
             <div class="nickname">
               <h2>Lucia Ferrari</h2>
               <p>grazie mille per tutto</p>
             </div>
             <div class="time"><p>12min</p></div>
           </div>
+
           <!-- Stefano -->
           <div class="card">
-           <div class="pfp">
-              <img  class="circleimg" src="./img/profile4.webp" alt="Stefano" />
+            <div class="pfp">
+              <img class="circleimg" src="./img/profile4.webp" alt="Stefano" />
               <div class="status">
                 <div class="offline"></div>
               </div>
-           </div>
+            </div>
             <div class="nickname">
               <h2>Stefano Romano</h2>
               <p>Tu: ci sentiamo dopo</p>
             </div>
             <div class="time"><p>18min</p></div>
           </div>
+
           <!-- Alessandra -->
           <div class="card">
-           <div class="pfp">
-              <img  class="circleimg" src="./img/profile5.webp" alt="Alessandra" />
+            <div class="pfp">
+              <img
+                class="circleimg"
+                src="./img/profile5.webp"
+                alt="Alessandra"
+              />
               <div class="status">
                 <div class="inactive"></div>
               </div>
-           </div>
+            </div>
             <div class="nickname">
               <h2>Alessandra Conti</h2>
               <p>quando hai tempo chiamami</p>
             </div>
             <div class="time"><p>25min</p></div>
           </div>
+
           <!-- Elena -->
           <div class="card">
-                <div class="pfp">
+            <div class="pfp">
               <img class="circleimg" src="./img/profile6.webp" alt="Elena" />
               <div class="status">
                 <div class="online"></div>
               </div>
-           </div>
+            </div>
             <div class="nickname">
               <h2>Elena Martini</h2>
               <p>Tu: hai visto il messaggio?</p>
             </div>
             <div class="time"><p>45min</p></div>
           </div>
+
           <!-- Matteo -->
           <div class="card">
-                <div class="pfp">
+            <div class="pfp">
               <img class="circleimg" src="./img/profile7.webp" alt="Matteo" />
               <div class="status">
                 <div class="offline"></div>
               </div>
-           </div>
+            </div>
             <div class="nickname">
               <h2>Matteo Greco</h2>
               <p>ho finito il progetto</p>
             </div>
             <div class="time"><p>12min</p></div>
           </div>
+
           <!--Marta -->
           <div class="card">
-                <div class="pfp">
+            <div class="pfp">
               <img class="circleimg" src="./img/profile8.webp" alt="Marta" />
               <div class="status11">
                 <div class="offline"></div>
               </div>
-           </div>
+            </div>
             <div class="nickname">
               <h2>Marta Cortina</h2>
               <p>Tu: lato nostro non ci sono problemi</p>
             </div>
             <div class="time"><p>1h</p></div>
-          </div></div>  
+          </div>
         </section>
       </main>
     </div>
+
+    <!-- FOOTER -->
     <footer>
       <div class="footericon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-houses-fill" viewBox="0 0 16 16">
-  <path d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.5 2.5 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354z"/>
-  <path d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708z"/>
-</svg><p>Pagina principale</p></div>  
-   <div class="footericon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
-  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
-</svg><p>Notifiche</p></div>  
-<div class="yourpfp"><img class="circleimg" src="./img/profile1.webp" alt="">
-  <p class="yourpfp">Tu </p></div> 
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          fill="currentColor"
+          class="bi bi-houses-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M7.207 1a1 1 0 0 0-1.414 0L.146 6.646a.5.5 0 0 0 .708.708L1 7.207V12.5A1.5 1.5 0 0 0 2.5 14h.55a2.5 2.5 0 0 1-.05-.5V9.415a1.5 1.5 0 0 1-.56-2.475l5.353-5.354z"
+          />
+          <path
+            d="M8.793 2a1 1 0 0 1 1.414 0L12 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l1.854 1.853a.5.5 0 0 1-.708.708L15 8.207V13.5a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 4 13.5V8.207l-.146.147a.5.5 0 1 1-.708-.708z"
+          />
+        </svg>
+        <p>Pagina principale</p>
+      </div>
+      <div class="footericon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="35"
+          height="35"
+          fill="currentColor"
+          class="bi bi-bell-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+          />
+        </svg>
+        <p>Notifiche</p>
+      </div>
+      <div class="yourpfp">
+        <img class="circleimg" src="./img/profile1.webp" alt="" />
+        <p class="yourpfp">Tu</p>
+      </div>
     </footer>
   </body>
 </html>
-

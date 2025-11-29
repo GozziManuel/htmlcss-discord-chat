@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* RESETS */
 img {
   display: block;
   max-width: 100%;
@@ -32,12 +32,14 @@ body {
 
 /* Sidebar */
 .sidebar {
-  gap: 20px;
   background-color: rgba(20, 19, 24);
   width: 130px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+
   padding-top: 10px;
 }
 
@@ -46,17 +48,24 @@ body {
 .server {
   height: 80px;
   width: 80px;
+
   margin-top: 10px;
+
   border-radius: 50px;
+
   object-fit: cover;
 }
 .chats {
   height: 70px;
   width: 70px;
+
   margin-top: 10px;
+
   border-radius: 50px;
+
   object-fit: cover;
   position: relative;
+
   cursor: pointer;
 }
 /* Transition bar */
@@ -64,8 +73,10 @@ body {
   content: "";
   height: 70px;
   width: 30px;
+
   background-color: white;
   border-radius: 10px;
+
   position: absolute;
   bottom: 0%;
   right: 135%;
@@ -74,11 +85,14 @@ body {
   content: "";
   height: 70px;
   width: 30px;
+
+  position: absolute;
   right: 99%;
+
   border: 3px solid rgba(20, 19, 24);
   background-color: white;
   border-radius: 10px;
-  position: absolute;
+
   opacity: 0;
 }
 /* Transition server */
@@ -98,72 +112,96 @@ body {
 /* MAIN */
 Main {
   background-color: rgba(28, 29, 34);
+
   flex-grow: 1;
+
   border-top-left-radius: 10px;
+
   overflow: auto;
+
   margin-top: 10px;
   padding: 15px;
 }
 
 .mess {
   color: white;
+
   padding-left: 30px;
   padding-top: 30px;
 }
 .friendsection {
   display: flex;
+
   height: 53px;
+
   padding-top: 12px;
   padding-left: 30px;
   padding-right: 30px;
+
   cursor: pointer;
 }
 
 .search {
   background-color: rgba(55, 58, 67);
+
   display: flex;
-  width: 40px;
-  margin-right: 10px;
-  border-radius: 20px;
   align-items: center;
   justify-content: center;
+
+  width: 40px;
+
+  margin-right: 10px;
+  border-radius: 20px;
+
   color: white;
 }
 .friendadd {
   background-color: rgba(55, 58, 67);
+
   display: flex;
   flex-grow: 1;
-  border-radius: 20px;
   align-items: center;
   justify-content: center;
-  color: white;
   gap: 10px;
+
+  border-radius: 20px;
+
+  color: white;
   font-size: 25px;
 }
 /* FRIENDS */
 .friends {
   display: flex;
   flex-direction: column;
+
   margin-top: 20px;
+
   color: white;
 }
 .card {
   flex: 1 1 0;
   display: flex;
   gap: 20px;
+
   border-radius: 20px;
+
   padding: 20px;
+
   opacity: 0.5;
 }
 .pfp {
   height: 50px;
   width: 50px;
+
   border-radius: 50px;
+
   object-fit: cover;
+
   display: flex;
   align-items: center;
-  position: relative;
   justify-content: center;
+
+  position: relative;
 }
 .nickname {
   display: flex;
@@ -183,30 +221,38 @@ Main {
 /* Footer */
 footer {
   margin-top: auto;
+
   background-color: rgba(45, 45, 53);
+
   display: flex;
-  height: 80px;
-  padding: 10px;
   align-items: flex-start;
   justify-content: space-between;
+
+  height: 80px;
+  padding: 10px;
 }
 .footericon {
   flex: 1 1 0;
+
   text-align: center;
   color: white;
 }
 .yourpfp {
   height: 60px;
-  flex: 1 1 0;
   width: 35px;
+
   object-fit: cover;
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex: 1 1 0;
+
   color: white;
 }
 /* Transition on FOOTER */
+
 .footericon,
 .yourpfp {
   opacity: 0.5;
@@ -229,11 +275,14 @@ footer {
 
 .offline::before {
   content: "";
+
   height: 15px;
-  position: absolute;
   width: 15px;
+
+  position: absolute;
   left: 60%;
   top: 55%;
+
   background-color: rgba(249, 67, 73);
   border: solid 8px rgba(28, 29, 34);
   border-radius: 20px;
@@ -241,11 +290,14 @@ footer {
 
 .inactive::before {
   content: "";
+
   height: 15px;
-  position: absolute;
   width: 15px;
+
+  position: absolute;
   left: 60%;
   top: 55%;
+
   background-color: rgba(244, 167, 27);
   border: solid 8px rgba(28, 29, 34);
   border-radius: 20px;
@@ -253,11 +305,14 @@ footer {
 
 .online::before {
   content: "";
+
   height: 15px;
-  position: absolute;
   width: 15px;
+
+  position: absolute;
   left: 60%;
   top: 55%;
+
   background-color: rgba(57, 166, 93);
   border: solid 8px rgba(28, 29, 34);
   border-radius: 20px;
