@@ -57,7 +57,9 @@ body {
   border-radius: 50px;
   object-fit: cover;
   position: relative;
+  cursor: pointer;
 }
+/* Transition bar */
 .selected::before {
   content: "";
   height: 70px;
@@ -79,6 +81,7 @@ body {
   position: absolute;
   opacity: 0;
 }
+/* Transition server */
 .toselect:hover::before {
   z-index: 1;
   opacity: 1;
@@ -89,6 +92,7 @@ body {
 }
 .zooming:hover {
   transform: scale(1.4);
+  cursor: pointer;
 }
 
 /* MAIN */
@@ -112,6 +116,7 @@ Main {
   padding-top: 12px;
   padding-left: 30px;
   padding-right: 30px;
+  cursor: pointer;
 }
 
 .search {
@@ -139,7 +144,6 @@ Main {
 .friends {
   display: flex;
   flex-direction: column;
-
   margin-top: 20px;
   color: white;
 }
@@ -156,9 +160,9 @@ Main {
   width: 50px;
   border-radius: 50px;
   object-fit: cover;
-  overflow: hidden;
   display: flex;
   align-items: center;
+  position: relative;
   justify-content: center;
 }
 .nickname {
@@ -174,6 +178,7 @@ Main {
   opacity: 1;
   transition: opacity 0.5s ease-out;
   background-color: rgba(38, 38, 46);
+  cursor: pointer;
 }
 /* Footer */
 footer {
@@ -200,4 +205,67 @@ footer {
   justify-content: center;
   flex-direction: column;
   color: white;
+}
+/* Transition on FOOTER */
+.footericon,
+.yourpfp {
+  opacity: 0.5;
+}
+
+.yourpfp:hover {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+.footericon:hover {
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+/* status */
+
+.offline::before {
+  content: "";
+  height: 15px;
+  position: absolute;
+  width: 15px;
+  left: 60%;
+  top: 55%;
+  background-color: rgba(249, 67, 73);
+  border: solid 8px rgba(28, 29, 34);
+  border-radius: 20px;
+}
+
+.inactive::before {
+  content: "";
+  height: 15px;
+  position: absolute;
+  width: 15px;
+  left: 60%;
+  top: 55%;
+  background-color: rgba(244, 167, 27);
+  border: solid 8px rgba(28, 29, 34);
+  border-radius: 20px;
+}
+
+.online::before {
+  content: "";
+  height: 15px;
+  position: absolute;
+  width: 15px;
+  left: 60%;
+  top: 55%;
+  background-color: rgba(57, 166, 93);
+  border: solid 8px rgba(28, 29, 34);
+  border-radius: 20px;
+}
+
+/* Transition BORDER */
+.card:hover .online::before,
+.card:hover .offline::before,
+.card:hover .inactive::before {
+  border: solid 8px rgba(38, 38, 46);
 }
