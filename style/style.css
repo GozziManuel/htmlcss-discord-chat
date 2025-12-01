@@ -41,6 +41,9 @@ body {
   gap: 20px;
 
   padding-top: 10px;
+
+  overflow: auto;
+  scrollbar-width: none;
 }
 
 /* Servers */
